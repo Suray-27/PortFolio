@@ -340,10 +340,10 @@ footer {
   }
 
   .contact-links a {
-    font-size: 0.2rem; /* Slightly smaller text on smaller screens */
+    font-size: 0.9rem; /* Slightly smaller text on smaller screens */
   }
   
-  .contact-section p {
+  #contact-section p {
     font-size: 0.2rem; /* Reduce paragraph size for mobile */
   }
   
