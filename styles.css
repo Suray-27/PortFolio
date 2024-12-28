@@ -247,6 +247,11 @@ footer {
   margin-bottom: 10px;
 }
 
+#contact-section p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
 .contact-links a {
   text-decoration: none;
   color: black;
@@ -344,7 +349,7 @@ footer {
   }
   
   #contact-section p {
-    font-size: 0.9rem; /* Reduce paragraph size for mobile */
+    font-size: 1rem; /* Reduce paragraph size for mobile */
   }
   
   .contact-links img {
