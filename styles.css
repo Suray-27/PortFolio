@@ -56,26 +56,35 @@ h2, h3 {
   padding: 10px; /* Add spacing for better layout */
 }
 
+/* Skills Section */
+
+.skill-badges {
+  display: flex; /* Flexbox layout */
+  flex-wrap: wrap; /* Allow wrapping to the next line */
+  justify-content: left; /* Center-align badges */
+  gap: 15px; /* Space between badges */
+}
+
+.badge {
+  background-color: #007bff; /* Blue background for badges */
+  color: #fff; /* White text color */
+  font-size: 1rem; /* Badge text size */
+  font-weight: 500; /* Slightly bold font */
+  padding: 10px 15px; /* Padding inside the badge */
+  border-radius: 5px; /* Rounded corners for pill shape */
+  transition: transform 0.3s, background-color 0.3s; /* Smooth hover effect */
+}
+
+.badge:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.1); /* Slightly increase size on hover */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
 /* Image Responsiveness */
 img {
   max-width: 100%;
   height: auto;
-}
-
-/* Badges */
-.skill .badge {
-  background-color: #007acc;
-  color: #fff;
-  padding: 5px 10px;
-  margin: 5px;
-  border-radius: 5px;
-}
-
-.badge-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 10px;
 }
 
 /* Projects Section */
@@ -200,7 +209,7 @@ footer {
   background-color: #222;
 }
 
-.dark-mode h1, .dark-mode h2, .dark-mode h3 {
+.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode p {
   color: #e5e5e5;
 }
 
@@ -357,40 +366,3 @@ footer {
     height: 100px;
   }
 }
-/*
-@media (max-width: 480px) {
-  body {
-    font-size: 12px;
-
-  nav ul {
-    flex-direction: column; 
-    align-items: center;
-  }
-
-  .project {
-    width: 100%; 
-  }
-
-  .contact-links {
-    flex-direction: column; 
-    gap: 10px; 
-  }
-
-  .contact-links a {
-    font-size: 0.8rem; 
-    text-align: center; 
-  }
-
-  .contact-links img {
-    width: 35px; 
-    height: 35px;
-  }
-
-  .contact-section h2 {
-    font-size: 1.5rem; 
-  }
-
-  .contact-section p {
-    font-size: 0.9rem; 
-  }
-} */
