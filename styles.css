@@ -339,40 +339,40 @@ footer {
     height: 5px;
   }
 }
-
+/*
 @media (max-width: 480px) {
   body {
-    font-size: 12px; /* Reduce font size for better readability */
+    font-size: 12px;
 
   nav ul {
-    flex-direction: column; /* Stack navigation links vertically */
+    flex-direction: column; 
     align-items: center;
   }
 
   .project {
-    width: 100%; /* Ensure projects span the full width on smaller screens */
+    width: 100%; 
   }
 
   .contact-links {
-    flex-direction: column; /* Stack links vertically */
-    gap: 10px; /* Reduce gap between links */
+    flex-direction: column; 
+    gap: 10px; 
   }
 
   .contact-links a {
-    font-size: 0.8rem; /* Smaller font size for links */
-    text-align: center; /* Center-align text for better mobile appearance */
+    font-size: 0.8rem; 
+    text-align: center; 
   }
 
   .contact-links img {
-    width: 35px; /* Adjust logo size for small screens */
+    width: 35px; 
     height: 35px;
   }
 
   .contact-section h2 {
-    font-size: 1.5rem; /* Adjust the heading size for small screens */
+    font-size: 1.5rem; 
   }
 
   .contact-section p {
-    font-size: 0.9rem; /* Slightly smaller text for the description */
+    font-size: 0.9rem; 
   }
-}
+} */
