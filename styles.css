@@ -339,7 +339,7 @@ footer {
     height: 5px;
   }
 }
-
+/*
 @media (max-width: 480px) {
   body {
     font-size: 12px; /* Reduce font size for better readability */
@@ -376,5 +376,4 @@ footer {
   .contact-section p {
     font-size: 0.9rem; /* Slightly smaller text for the description */
   }
-}
-
+}*/
