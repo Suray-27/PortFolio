@@ -327,7 +327,7 @@ footer {
   
   .contact-links {
     flex-direction: column; /* Stack links vertically */
-    gap: 15px; /* Reduce gap between links */
+    gap: 10px; /* Reduce gap between links */
   }
 
   .contact-links a {
@@ -335,8 +335,8 @@ footer {
   }
 
   .contact-links img {
-    width: 35px; /* Adjust logo size for smaller screens */
-    height: 35px;
+    width: 15px; /* Adjust logo size for smaller screens */
+    height: 15px;
   }
 }
 
