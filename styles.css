@@ -249,9 +249,9 @@ footer {
 }
 
 .contact-links img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%; /* Makes images circular */
+  width: 15px;
+  height: 15px;
+  border-radius: 25%; /* Makes images circular */
   object-fit: cover;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds shadow */
 }
@@ -331,7 +331,7 @@ footer {
   }
 
   .contact-links a {
-    font-size: 0.9rem; /* Slightly smaller text on smaller screens */
+    font-size: 1rem; /* Slightly smaller text on smaller screens */
   }
 
   .contact-links img {
