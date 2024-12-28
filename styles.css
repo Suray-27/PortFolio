@@ -229,6 +229,10 @@ footer {
   margin: 20px ;
 }
 
+#contact-section {
+  text-align: center;
+  padding: 20px;
+}
 .contact-links {
   display: flex;
   flex-wrap: wrap; /* Allows wrapping on smaller screens */
@@ -236,6 +240,11 @@ footer {
   align-items: center;
   gap: 20px; /* Adjust spacing between links */
   margin-top: 15px;
+}
+
+#contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 .contact-links a {
@@ -327,16 +336,20 @@ footer {
   
   .contact-links {
     flex-direction: column; /* Stack links vertically */
-    gap: 10px; /* Reduce gap between links */
+    gap: 15px; /* Reduce gap between links */
   }
 
   .contact-links a {
-    font-size: 1rem; /* Slightly smaller text on smaller screens */
+    font-size: 0.9rem; /* Slightly smaller text on smaller screens */
   }
-
+  
+  .contact-section p {
+    font-size: 0.9rem; /* Reduce paragraph size for mobile */
+  }
+  
   .contact-links img {
-    width: 5px; /* Adjust logo size for smaller screens */
-    height: 5px;
+    width: 50px; /* Adjust logo size for smaller screens */
+    height: 50px;
   }
 }
 /*
