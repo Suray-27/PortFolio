@@ -226,7 +226,7 @@ footer {
 /* Contact Section */
 #contact {
   text-align: center;
-  margin: 20px 0;
+  margin: 20px ;
 }
 
 .contact-links {
@@ -311,6 +311,6 @@ footer {
 
   .contact-links {
     flex-direction: column;
-    align-items: center;
+    align-items: left;
   }
 }
