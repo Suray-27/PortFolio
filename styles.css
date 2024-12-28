@@ -340,16 +340,16 @@ footer {
   }
 
   .contact-links a {
-    font-size: 0.9rem; /* Slightly smaller text on smaller screens */
+    font-size: 0.2rem; /* Slightly smaller text on smaller screens */
   }
   
   .contact-section p {
-    font-size: 0.9rem; /* Reduce paragraph size for mobile */
+    font-size: 0.2rem; /* Reduce paragraph size for mobile */
   }
   
   .contact-links img {
-    width: 50px; /* Adjust logo size for smaller screens */
-    height: 50px;
+    width: 100px; /* Adjust logo size for smaller screens */
+    height: 100px;
   }
 }
 /*
