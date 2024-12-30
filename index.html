@@ -1,140 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Surendhar Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-  <header>
-    <h1>Surendhar B</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#learning">Currently Learning</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><button onclick="toggleTheme()">Toggle Dark Mode</button></li>
-      </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Surendhar</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-  </header>
-
-  <main>
-    <!-- About Section -->
+    <nav id="hamburger-nav">
+      <div class="logo">Surendhar</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Surendhar</h1>
+        <p class="section__text__p2">Data Analyst</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('../assets/Surendhar_Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="../assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/surendhar-b-838922244/'"
+          />
+          <img
+            src="../assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Suray-27'"
+          />
+        </div>
+      </div>
+    </section>
     <section id="about">
-      <h2>About Me</h2>
-      <p>I am a data analyst skilled in Excel, Python, Power BI, SQL, Tableau, and RapidMiner AI Studio, turning data into actionable insights for smarter decision-making.</p>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="skill-badges">
-        <span class="badge">Excel</span>
-        <span class="badge">Python</span>
-        <span class="badge">Power BI</span>
-        <span class="badge">SQL</span>
-        <span class="badge">Tableau</span>
-        <span class="badge">Machine Learning</span>
-        <span class="badge">RapidMiner</span>
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="../assets/me.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="../assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Data Analyst - Intern @ English Partner - LLP <br>(for 2 Months)<br>
+              Data Science - Intern @ Cognifyz Technologies <br>(for 1 Month)</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="../assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>BBA<br />MBA (Business Analytics - HR)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Data science enthusiast currently pursuing a MBA Specialization in Business Analytics and HR. 
+              Skilled in uncovering data-driven insights to inform decision-making and optimize performance.
+              Passionate about transforming raw data into actionable insights, enhancing organizational understanding 
+              and customer engagement.
+            </p>
+          </div>
+        </div>
       </div>
+      <img
+        src="../assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
     </section>
-
-    <!-- Currently Learning Section -->
-    <section id="learning">
-      <h2>Currently Learning</h2>
-      <ul>
-        <li>Data Engineering</li>
-        <li>Advanced SQL</li>
-      </ul>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Analytical Tool</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="../assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Excel</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySql</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Power BI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Machine Learning</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tableau</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                 src = "assets/checkmark.png"
+                 alt = "Experience icon"
+                 class = "icon"
+                />
+                <div>
+                  <h3>Rapid Miner AI Studio</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src = "assets/checkmark.png"
+                  alt = "Experience icon"
+                  class = "icon"
+                />
+                <div>
+                  <h3>Mongo DB</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+             </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Other Tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Github</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Generative AI</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <!--<article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>-->
+      <img
+        src="../assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
     </section>
-
-    <!-- Projects Section -->
     <section id="projects">
-      <h2>My Projects</h2>
-      <div class="filters">
-        <button onclick="filterProjects('all')" class="active">All</button>
-        <button onclick="filterProjects('python')">Python</button>
-        <button onclick="filterProjects('powerbi')">Power BI</button>
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="../assets/Restaurant analytics.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Restaurant-analytics</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Suray-27/Restaurant-Analysis'"
+              >
+                Github
+              </button>
+              <!--<button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>-->
+            </div>
+          </div> 
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Feedback.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Comprehensive Sentiment Analysis and AI-Powered Response System</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Suray-27/Feedback'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Webscrape.png"
+                alt="Feedback"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Industrial Analysis</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Suray-27/Industrial-analysis'"
+              >
+                Github
+              </button>
+              <!--<button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>-->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/image.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Customer Conversion track (Dashboard)</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.linkedin.com/feed/update/urn:li:activity:7209830490923499520/?originTrackingId=iwADZI1oRD%2Bua91m7JHd3w%3D%3D'"
+              >
+                Live Demo
+              </button>
+        </div>
       </div>
-      <div class="project-list">
-        <!-- Individual Projects -->
-        <div class="project python">
-          <img src="Images/Webscrape.png" alt="Python Project Thumbnail" class="project-thumbnail">
-          <div class="project-content">
-            <h3>Industrial Revenue Analysis</h3>
-            <p>Scraped Wikipedia data and analyzed the top 50 largest companies in India using Python.</p>
-            <a href="https://github.com/Suray-27/Data-analysis" target="_blank">View Project</a>
-          </div>
-        </div>
-
-        <div class="project python">
-          <img src="Images/Restaurant analytics.jpg" alt="Restaurant Analytics" class="project-thumbnail">
-          <div class="project-content">
-            <h3>Restaurant Analytics</h3>
-            <p>Analyzed customer preferences and factors influencing restaurant performance.</p>
-            <a href="https://github.com/Suray-27/Restaurant-Analysis" target="_blank">View Project</a>
-          </div>
-        </div>
-        
-        <div class="project python">
-          <img src="Images/Feedback.jpg" alt="Comprehensive Sentiment Analysis and AI-Powered Response System" class="project-thumbnail">
-          <div class="project-content">
-            <h3>Restaurant Analytics</h3>
-            <p>This project integrates AI and machine learning to revolutionize customer feedback management by predicting sentiment, generating responses, and automating follow-ups. It offers real-time interaction through a user-friendly interface with efficient data management.</p>
-            <a href="https://github.com/Suray-27/Feedback" target="_blank">View Project</a>
-          </div>
-        </div>
-        
-        <div class="project powerbi">
-          <img src="Images/Flexible time frame.jpg" alt="Power BI Dashboard" class="project-thumbnail">
-          <div class="project-content">
-            <h3>Customer Conversion Rate</h3>
-            <p>Created a Power BI dashboard for actionable insights and flexible visualizations.</p>
-            <a href="https://www.linkedin.com" target="_blank">View Dashboard</a>
-          </div>
-        </div>
-      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
     </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications">
-      <h2>Certifications</h2>
-      <ul>
-        <li>Python Programming: Beginner (Udemy)</li>
-        <li>Data Analysis with Python (Coursera)</li>
-        <li>Excel Skills for Business: Essentials (Coursera)</li>
-        <li>Excel Skills for Business: Intermediate I (Coursera)</li>
-      </ul>
-    </section>
-
-    <!-- Contact Section -->
     <section id="contact">
-      <h2>Contact Me</h2>
-      <div class="contact-links">
-        <a href="https://www.linkedin.com/in/surendhar-b-838922244/" target="_blank" class="linkedin-link">
-          <img src="Images/linkedIn.png" alt="LinkedIn Logo" loading='lazy' class="icon"> LinkedIn
-        </a>
-        <a href="mailto:surendharb14@gmail.com" class="gmail-link">
-          <img src="Images/gmail.png" alt="Gmail Logo" loading='lazy' class="icon"> Email Me
-        </a>
-        <a href="https://github.com/Suray-27" target="_blank" class="github-link">
-          <img src="Images/github.png" alt="GitHub Logo" loading='lazy' class="icon"> GitHub
-        </a>
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:surendharbaskar85@gmail.com">Gmail</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/surendhar-b-838922244/">LinkedIn</a></p>
+        </div>
       </div>
     </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2024 Surendhar B Portfolio. All Rights Reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Surendhar. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
